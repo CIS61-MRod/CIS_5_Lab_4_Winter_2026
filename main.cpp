@@ -16,12 +16,8 @@ double getAverage(int sum, int size) {
 }
 
 void addBonus(int arr[], int size, int bonus = 5) {
-	cout << "Adding bonus of " << bonus << " to each score." << endl;
-
 	for (int i = 0; i < size; i++) {
 		arr[i] += bonus;
-
-		cout << "Score after bonus for student " << i + 1 << ": " << arr[i] << endl;
 	}
 }
 
