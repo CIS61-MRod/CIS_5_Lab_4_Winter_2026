@@ -21,7 +21,7 @@ void addBonus(int arr[], int size, int bonus = 5) {
 	}
 }
 
-int findHighest(const int* arr, int size) { //MIGHT NEED TO FIX THIS FUNCTION
+int findHighest(const int* arr, int size) {
 	int highest = arr[0];
 	for (int i = 1; i < size; i++) {
 		if (arr[i] > highest) {
@@ -34,7 +34,7 @@ int findHighest(const int* arr, int size) { //MIGHT NEED TO FIX THIS FUNCTION
 int countPassed(const int arr[], int size) {
 	int count = 0;
 	for (int i = 0; i < size; ++i) {
-		if (arr[i] >= 70) { // Assuming passing score is 50
+		if (arr[i] >= 70) {
 			count++;
 		}
 	}
@@ -52,11 +52,11 @@ int main() {
 
 	cout << "\nScores after adding bonus: " << endl;
 	for (auto& num : scores) {
-		num += 5; // Adding bonus of 5 to each score
+		num += 5;
 	}
 
 	for (int num : scores) {
-		cout << num << " "; // Displaying scores after adding bonus
+		cout << num << " ";
 	}
 
 	int sum = calculateSum(scores, SIZE);
